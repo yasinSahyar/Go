@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  mongo:
+    image: mongo:6.0
+    container_name: yasin-mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: yasin_todo
+
+  api:
+    build: .
+    container_name: yasin-todo-api
+    restart: unless-stopped
+    ports:
+      - "9000:9000"
+    environment:
+      MONGO_URL: "mongodb://mongo:27017"
+    depends_on:
+      - mongo

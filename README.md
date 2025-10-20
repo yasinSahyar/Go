@@ -72,6 +72,19 @@ swag init
 ### 5️⃣ Run the Application
 go run main.go
 
+---
+
+## 📷 Screenshots
+
+### API Running
+![API Running](/images/Screenshot%2020251.png)
+
+### Swagger UI
+![Swagger UI](/images/Screenshot%2020252.png)
+![Swagger UI](/images/Screenshot%2020253.png)
+
+---
+
 
 Server runs at:
 
