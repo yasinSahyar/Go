@@ -30,26 +30,26 @@ Supports CRUD operations, advanced features, Swagger documentation, and Docker d
 ---
 
 
-
 ## 🗂 Project Structure
 
-
+```plaintext
 yasin-todo-api/
 ├── main.go
 ├── go.mod
 ├── go.sum
 ├── README.md
 ├── models/
-│ └── task.go
+│   └── task.go
 ├── handlers/
-│ └── taskHandler.go
+│   └── taskHandler.go
 ├── routes/
-│ └── taskRoutes.go
+│   └── taskRoutes.go
 ├── static/
-│ └── home.tpl
+│   └── home.tpl
 └── docs/
-└── swagger files (auto-generated)
+    └── swagger files (auto-generated)
 
+```
 
 
 ### 1️⃣ Clone the Repository
@@ -99,7 +99,7 @@ http://localhost:9000
 
 http://localhost:9000/swagger/index.html
 
----
+
 🧩 API Endpoints
 Method	Endpoint	Description
 GET	/tasks	Retrieve all tasks
@@ -107,7 +107,6 @@ GET	/tasks/{id}	Retrieve a single task by ID
 POST	/tasks	Create a new task
 PUT	/tasks/{id}	Update an existing task
 DELETE	/tasks/{id}	Delete a task
----
 
 🔍 Advanced Features
 
