@@ -1,22 +1,21 @@
 # 🐹 Yasin Todo API
-
 **Prepared by:** Yasin Sahyar  
 **Technology Stack:** Go (Golang), MongoDB, Chi Router, Swagger, Docker  
 
-A simple and complete REST API project built with **Go** and **MongoDB**, perfectly matching the “Go REST API Assignment”.  
+A simple and complete REST API project built with Go and MongoDB, perfectly matching the “Go REST API Assignment”.  
 Supports CRUD operations, advanced features, Swagger documentation, and Docker deployment.
 
 ---
 
 ## 🚀 Features Overview
 
-| Step | Requirement | Status | Description |
-|------|------------|--------|-------------|
-| Step 1 | Study Go REST tutorials | ✅ | Tutorials reviewed before implementation. |
-| Step 2 | CRUD operations | ✅ | Full CRUD for tasks (GET, POST, PUT, DELETE). |
-| Step 3 | Advanced features (3+) | ✅ | Filtering, Pagination, Validation implemented. |
-| Step 4 | API documentation | ✅ | Swagger UI available at `/swagger/index.html`. |
-| Step 5 | Docker deployment | ✅ | Dockerfile provided; containerized for cloud deployment. |
+| Step | Requirement                  | Status | Description                                         |
+|------|------------------------------|--------|-----------------------------------------------------|
+| 1    | Study Go REST tutorials      | ✅      | Tutorials reviewed before implementation.          |
+| 2    | CRUD operations             | ✅      | Full CRUD for tasks (GET, POST, PUT, DELETE).     |
+| 3    | Advanced features (3+)      | ✅      | Filtering, Pagination, Validation implemented.    |
+| 4    | API documentation           | ✅      | Swagger UI available at `/swagger/index.html`.     |
+| 5    | Docker deployment           | ✅      | Dockerfile provided; containerized for deployment.|
 
 ---
 
@@ -29,6 +28,8 @@ Supports CRUD operations, advanced features, Swagger documentation, and Docker d
 - **Containerization:** Docker  
 
 ---
+
+
 
 ## 🗂 Project Structure
 
@@ -63,15 +64,19 @@ Ensure MongoDB runs at:
 
 mongodb://localhost:27017
 
-### 3️⃣ Install Dependencies
+3️⃣ Install Dependencies
 go mod tidy
 
-### 4️⃣ Generate Swagger Docs
+4️⃣ Generate Swagger Docs
 swag init
 
-### 5️⃣ Run the Application
+5️⃣ Run the Application
 go run main.go
 
+
+Server runs at:
+
+http://localhost:9000
 ---
 
 ## 📷 Screenshots
@@ -90,9 +95,11 @@ Server runs at:
 
 http://localhost:9000
 
-### 6️⃣ Open Swagger UI
+### 6️⃣ Open Swagger UI:
+
 http://localhost:9000/swagger/index.html
 
+---
 🧩 API Endpoints
 Method	Endpoint	Description
 GET	/tasks	Retrieve all tasks
@@ -100,11 +107,15 @@ GET	/tasks/{id}	Retrieve a single task by ID
 POST	/tasks	Create a new task
 PUT	/tasks/{id}	Update an existing task
 DELETE	/tasks/{id}	Delete a task
+---
+
 🔍 Advanced Features
 
-✅ Filtering: Filter tasks by status (completed / pending).
-✅ Pagination: Supports page and page_size query parameters.
-✅ Validation: Input validation for POST and PUT requests.
+✅ Filtering: Filter tasks by status (completed / pending)
+
+✅ Pagination: Supports page and page_size query parameters
+
+✅ Validation: Input validation for POST and PUT requests
 
 🐳 Docker Deployment
 Build Docker Image
@@ -143,4 +154,4 @@ This project covers all assignment steps:
 
 ✅ Step 5: Docker Deployment
 
-Perfect for demonstrating understanding of Go REST APIs, MongoDB integration, and best practices for API development.
+Perfect for demonstrating understanding of Go
